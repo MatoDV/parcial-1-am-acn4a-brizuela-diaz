@@ -8,8 +8,9 @@
 
     <LinearLayout
         android:id="@+id/ly.horizontal.imagen"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/ly.horizontal.text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +22,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E40000"
             android:contentDescription="@string/img.descripcion"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            app:srcCompat="@drawable/iaimage" />
 
     </LinearLayout>
 
@@ -31,20 +31,22 @@
         android:id="@+id/ly.horizontal.text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@id/ly.horizontal.btn"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/ly.horizontal.imagen"
-        app:layout_constraintTop_toBottomOf="@+id/ly.horizontal.imagen">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.imagen">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif"
             android:text="@string/txt.text"
             android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
 
@@ -52,7 +54,7 @@
         android:id="@+id/ly.horizontal.btn"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
