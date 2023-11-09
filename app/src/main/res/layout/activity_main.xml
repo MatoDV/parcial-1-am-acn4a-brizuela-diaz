@@ -14,10 +14,12 @@
         app:layout_constraintBottom_toTopOf="@id/linearLayout">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/img.foto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#E40000"
+            android:contentDescription="@string/img.descripcion"
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
@@ -25,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Info" />
+            android:text="@string/txt.text"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -40,12 +43,12 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:insetLeft="0dp"
             android:insetTop="6dp"
-            android:text="Mas info" />
+            android:text="@string/txt.btn" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
