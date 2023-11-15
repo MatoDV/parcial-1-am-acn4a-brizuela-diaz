@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,6 +60,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
+                }
+            }
+        });
+
+        Button MostrarMasButton = findViewById(R.id.btn_masinfo);
+        TextView TextoEscondido = findViewById(R.id.txt_escondido);
+
+        MostrarMasButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cambia la visibilidad del TextView para mostrar más información
+                if (TextoEscondido.getVisibility() == View.VISIBLE) {
+                    TextoEscondido.setVisibility(View.GONE); // Si es visible, lo oculta
+                } else {
+                    TextoEscondido.setVisibility(View.VISIBLE); // Si está oculto, lo muestra
                 }
             }
         });

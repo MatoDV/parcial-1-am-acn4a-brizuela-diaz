@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.btn"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.escondido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ly.horizontal.imagen">
@@ -48,6 +48,31 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly.horizontal.escondido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_escondido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_escondido"
+            android:textAlignment="center"
+            android:textColor="#32D5D5"
+            android:textSize="16sp"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
@@ -58,7 +83,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text">
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.escondido">
 
         <Button
             android:id="@+id/btn_masinfo"

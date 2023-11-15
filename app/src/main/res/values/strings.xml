@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4a-brizuela-diaz</string>
     <string name="txt.text">La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas.</string>
+    <string name="txt_escondido">En la actualidad, la inteligencia artificial abarca una gran variedad de subcampos. Éstos van desde áreas de propósito general, aprendizaje y percepción, a otras más específicas como el reconocimiento de voz, el juego de ajedrez, la demostración de teoremas matemáticos, la escritura de poesía y el diagnóstico de enfermedades. La inteligencia artificial sintetiza y automatiza tareas que en principio son intelectuales y, por lo tanto, es potencialmente relevante para cualquier ámbito de actividades intelectuales humanas. En este sentido, es un campo genuinamente universal.</string>
     <string name="txt.btn">Mas Info</string>
     <string name="img.descripcion">Foto de la IA</string>
     <string name="boton.igdescripcion">Boton de instagram</string>
     <string name="boton.fbdescripcion">Boton de facebook</string>
     <string name="boton.gmdescripcion">Boton de gmail</string>
+
 </resources>
