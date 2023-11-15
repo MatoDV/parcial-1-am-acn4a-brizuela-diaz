@@ -25,12 +25,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Instagram button clicked");
                 String url = "https://www.instagram.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                intent.setPackage("com.android.chrome"); // Paquete de Chrome
                 startActivity(intent);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
+
             }
         });
         ImageButton btnFacebook = findViewById(R.id.img_facebook);
@@ -39,14 +37,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Facebook button clicked");
                 String url = "https://www.facebook.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                intent.setPackage("com.android.chrome"); // Paquete de Chrome
                 startActivity(intent);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                } else {
-                Log.e("ImageButtonClick", "No se puede abrir el enlace");
-            }
+
             }
         });
         ImageButton btnGmail = findViewById(R.id.img_gmail);
@@ -55,12 +49,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Gmail button clicked");
                 String url = "https://mail.google.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                intent.setPackage("com.android.chrome"); // Paquete de Chrome
                 startActivity(intent);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
+                
             }
         });
 
