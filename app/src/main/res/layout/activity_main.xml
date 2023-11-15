@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C8C8C8"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             android:layout_weight="1"
             android:text="@string/txt_titulo"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/purple_500"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -68,7 +69,7 @@
             android:fontFamily="sans-serif"
             android:text="@string/txt.text"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/purple_500"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -92,7 +93,7 @@
             android:layout_weight="1"
             android:text="@string/txt_escondido"
             android:textAlignment="center"
-            android:textColor="#32D5D5"
+            android:textColor="@color/purple_500"
             android:textSize="16sp"
             android:visibility="gone" />
     </LinearLayout>
