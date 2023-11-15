@@ -7,5 +7,6 @@
     <string name="boton.igdescripcion">Boton de instagram</string>
     <string name="boton.fbdescripcion">Boton de facebook</string>
     <string name="boton.gmdescripcion">Boton de gmail</string>
+    <string name="txt_titulo">Information IA</string>
 
 </resources>

@@ -65,8 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 // Cambia la visibilidad del TextView para mostrar más información
                 if (TextoEscondido.getVisibility() == View.VISIBLE) {
                     TextoEscondido.setVisibility(View.GONE); // Si es visible, lo oculta
+                    MostrarMasButton.setText("Mas info");
                 } else {
                     TextoEscondido.setVisibility(View.VISIBLE); // Si está oculto, lo muestra
+                    MostrarMasButton.setText("Menos info");
                 }
             }
         });
