@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Instagram button clicked");
                 String url = "https://www.instagram.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                intent.setPackage("com.android.chrome"); // Paquete de Chrome
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Facebook button clicked");
                 String url = "https://www.facebook.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                intent.setPackage("com.android.chrome"); // Paquete de Chrome
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("ImageButtonClick", "Gmail button clicked");
                 String url = "https://mail.google.com/";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                intent.setPackage("com.android.chrome"); // Paquete de Chrome
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
