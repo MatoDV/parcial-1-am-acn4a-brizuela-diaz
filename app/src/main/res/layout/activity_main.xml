@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/img.foto"
+            android:id="@+id/img_fotoPortada"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/ly.horizontal.imagen">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txt_principal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_masinfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,27 +83,30 @@
         app:layout_constraintTop_toBottomOf="@id/ly.horizontal.btn">
 
         <ImageButton
-            android:id="@+id/img.instagram"
+            android:id="@+id/img_instagram"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/purple_500"
+            android:contentDescription="@string/boton.igdescripcion"
             app:srcCompat="@drawable/instagram" />
 
         <ImageButton
-            android:id="@+id/img.gmail"
+            android:id="@+id/img_gmail"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/purple_500"
+            android:contentDescription="@string/boton.gmdescripcion"
             app:srcCompat="@drawable/gmail" />
 
         <ImageButton
-            android:id="@+id/img.facebook"
+            android:id="@+id/img_facebook"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/purple_500"
+            android:contentDescription="@string/boton.fbdescripcion"
             app:srcCompat="@drawable/facebook" />
     </LinearLayout>
 

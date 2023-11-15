@@ -3,4 +3,7 @@
     <string name="txt.text">La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas.</string>
     <string name="txt.btn">Mas Info</string>
     <string name="img.descripcion">Foto de la IA</string>
+    <string name="boton.igdescripcion">Boton de instagram</string>
+    <string name="boton.fbdescripcion">Boton de facebook</string>
+    <string name="boton.gmdescripcion">Boton de gmail</string>
 </resources>
