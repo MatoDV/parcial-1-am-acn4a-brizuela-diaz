@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8C8C8"
-    tools:context=".MainActivity">
+    tools:context=".TerceraPagina">
 
     <LinearLayout
         android:id="@+id/ly.horizontal.titulo3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#5C5C5C"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/ly.horizontal.imagen3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +22,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/txt_titulo"
+            android:text="@string/txt_titulo3"
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
+            android:textColor="#00FDE8"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -41,13 +41,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/img_fotoPortada"
+            android:id="@+id/img_fotoPortada3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/img.descripcion"
-            app:srcCompat="@drawable/iaimage" />
-
+            app:srcCompat="@drawable/chatgpt"
+            tools:srcCompat="@drawable/chatgpt" />
     </LinearLayout>
 
     <LinearLayout
@@ -67,9 +67,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif"
-            android:text="@string/txt.text"
+            android:text="@string/txt.text3"
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
+            android:textColor="#00FDE8"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -91,9 +91,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/txt_escondido"
+            android:text="@string/txt_escondido3"
             android:textAlignment="center"
-            android:textColor="@color/purple_500"
+            android:textColor="#00FDE8"
             android:textSize="16sp"
             android:visibility="gone" />
     </LinearLayout>
@@ -113,17 +113,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#00FDE8"
             android:insetLeft="0dp"
             android:insetTop="6dp"
-            android:text="@string/txt.btn" />
+            android:text="@string/txt.btn"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.btnPag2"
+        android:id="@+id/ly.horizontal.btnPrePag3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="275dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="275dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@id/ly.horizontal.footer3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,11 +133,13 @@
         app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text3">
 
         <Button
-            android:id="@+id/btn_nextpag2"
+            android:id="@+id/btn_prepag3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/txt.btnNextPag" />
+            android:backgroundTint="#00FDE8"
+            android:text="@string/txt.btnPreviousPag"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <LinearLayout
@@ -143,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="680dp"
-        android:background="#5D12E4"
+        android:background="#00FDE8"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/purple_500"
+            android:background="#00FDE8"
             android:contentDescription="@string/boton.igdescripcion"
             app:srcCompat="@drawable/instagram" />
 
@@ -164,7 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/purple_500"
+            android:background="#00FDE8"
             android:contentDescription="@string/boton.gmdescripcion"
             app:srcCompat="@drawable/gmail" />
 
@@ -173,11 +177,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/purple_500"
+            android:background="#00FDE8"
             android:contentDescription="@string/boton.fbdescripcion"
             app:srcCompat="@drawable/facebook" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

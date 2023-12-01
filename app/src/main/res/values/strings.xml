@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4a-brizuela-diaz</string>
     <string name="txt.text">La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito de crear máquinas que presenten las mismas capacidades que el ser humano. Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos años está presente en nuestro día a día a todas horas.</string>
+    <string name="txt.text3">ChatGPT es una versión de la tecnología de inteligencia artificial desarrollada por OpenAI, específicamente basada en la arquitectura GPT (Generative Pre-trained Transformer). Es un modelo de lenguaje que ha sido entrenado con una gran cantidad de texto proveniente de internet, lo que le permite entender y generar contenido en lenguaje natural.</string>
     <string name="txt.text2">IA estrecha o débil: Son sistemas diseñados para realizar tareas específicas. Por ejemplo:
 
 Chatbots: Programas que simulan conversaciones humanas para brindar información o asistencia en servicio al cliente.
 Sistemas de recomendación: Algoritmos que sugieren productos, películas o música basándose en los gustos previos del usuario.
 Reconocimiento facial: Tecnología que identifica rostros en imágenes o vídeos.</string>
     <string name="txt_escondido">En la actualidad, la inteligencia artificial abarca una gran variedad de subcampos. Éstos van desde áreas de propósito general, aprendizaje y percepción, a otras más específicas como el reconocimiento de voz, el juego de ajedrez, la demostración de teoremas matemáticos, la escritura de poesía y el diagnóstico de enfermedades. La inteligencia artificial sintetiza y automatiza tareas que en principio son intelectuales y, por lo tanto, es potencialmente relevante para cualquier ámbito de actividades intelectuales humanas. En este sentido, es un campo genuinamente universal.</string>
+    <string name="txt_escondido3">Características clave de ChatGPT:
+-Capacidad de Conversación: ChatGPT está diseñado para sostener conversaciones naturales con los usuarios, respondiendo preguntas, ofreciendo información, y generando texto coherente y relevante.
+-Adaptabilidad: Puede adaptarse a una variedad de temas y preguntas debido a su amplio entrenamiento con datos de internet. Puede responder sobre una gama diversa de temas, desde ciencia y tecnología hasta cultura, entretenimiento, historia y más.
+-Generación de Texto Coherente: ChatGPT es capaz de generar respuestas contextualmente coherentes, utilizando el contexto de la conversación para dar respuestas relevantes.
+    </string>
     <string name="txt_escondido2">IA general o fuerte: Este tipo de IA sería capaz de realizar cualquier tarea intelectual que un humano pueda hacer. Aún estamos lejos de alcanzar este nivel y no existen sistemas completamente autónomos con esta capacidad.
 
 Aprendizaje automático (Machine Learning, ML): Es una rama de la IA que se enfoca en el desarrollo de algoritmos y técnicas que permiten a las computadoras aprender patrones a partir de datos y tomar decisiones sin ser programadas explícitamente. </string>
@@ -17,6 +23,7 @@ Aprendizaje automático (Machine Learning, ML): Es una rama de la IA que se enfo
     <string name="boton.gmdescripcion">Boton de gmail</string>
     <string name="txt_titulo">Information IA</string>
     <string name="txt_titulo2">Tipos de IA</string>
+    <string name="txt_titulo3">Chat GPT</string>
     <string name="txt.btnNextPag">Siguiente</string>
     <string name="txt.btnPreviousPag">Anterior</string>
 

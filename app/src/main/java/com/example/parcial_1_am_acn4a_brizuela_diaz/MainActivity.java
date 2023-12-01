@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton btnInstagram = findViewById(R.id.img_instagram2);
+        ImageButton btnInstagram = findViewById(R.id.img_instagram3);
         btnInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnFacebook = findViewById(R.id.img_facebook2);
+        ImageButton btnFacebook = findViewById(R.id.img_facebook3);
         btnFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnGmail = findViewById(R.id.img_gmail2);
+        ImageButton btnGmail = findViewById(R.id.img_gmail3);
         btnGmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button MostrarMasButton = findViewById(R.id.btn_masinfo2);
-        TextView TextoEscondido = findViewById(R.id.txt_escondido2);
+        Button MostrarMasButton = findViewById(R.id.btn_masinfo3);
+        TextView TextoEscondido = findViewById(R.id.txt_escondido3);
 
         MostrarMasButton.setOnClickListener(new View.OnClickListener() {
             @Override
