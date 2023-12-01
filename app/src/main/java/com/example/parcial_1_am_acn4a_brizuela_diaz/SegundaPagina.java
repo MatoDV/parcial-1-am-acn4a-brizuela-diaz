@@ -71,11 +71,19 @@ public class SegundaPagina extends AppCompatActivity {
             }
         });
 
-        Button botonVolver = findViewById(R.id.btn_prepag);
+        Button botonVolver = findViewById(R.id.btn_prepag2);
         botonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SegundaPagina.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button botonSiguiente = findViewById(R.id.btn_nextpag2);
+        botonSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SegundaPagina.this, TerceraPagina.class);
                 startActivity(intent);
             }
         });
