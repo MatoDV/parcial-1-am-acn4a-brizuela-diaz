@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton btnInstagram = findViewById(R.id.img_instagram);
+        ImageButton btnInstagram = findViewById(R.id.img_instagram2);
         btnInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnFacebook = findViewById(R.id.img_facebook);
+        ImageButton btnFacebook = findViewById(R.id.img_facebook2);
         btnFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnGmail = findViewById(R.id.img_gmail);
+        ImageButton btnGmail = findViewById(R.id.img_gmail2);
         btnGmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button MostrarMasButton = findViewById(R.id.btn_masinfo);
-        TextView TextoEscondido = findViewById(R.id.txt_escondido);
+        Button MostrarMasButton = findViewById(R.id.btn_masinfo2);
+        TextView TextoEscondido = findViewById(R.id.txt_escondido2);
 
         MostrarMasButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
                     TextoEscondido.setVisibility(View.VISIBLE); // Si está oculto, lo muestra
                     MostrarMasButton.setText("Menos info");
                 }
+            }
+        });
+        Button botonIrSegundaPagina = findViewById(R.id.btn_nextpag2);
+        botonIrSegundaPagina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SegundaPagina.class);
+                startActivity(intent);
             }
         });
     }

@@ -8,17 +8,17 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.titulo"
+        android:id="@+id/ly.horizontal.titulo2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.imagen"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.imagen2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txt_titulo"
+            android:id="@+id/txt_titulo2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -29,15 +29,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.imagen"
+        android:id="@+id/ly.horizontal.imagen2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.text"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.text2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.titulo"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.titulo2"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -51,18 +51,18 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.text"
+        android:id="@+id/ly.horizontal.text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.escondido"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.escondido2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.imagen">
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.imagen2">
 
         <TextView
-            android:id="@+id/txt_principal"
+            android:id="@+id/txt_principal2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -75,19 +75,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.escondido"
+        android:id="@+id/ly.horizontal.escondido2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.btn"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.btn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text2"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txt_escondido"
+            android:id="@+id/txt_escondido2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -99,17 +99,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.btn"
+        android:id="@+id/ly.horizontal.btn2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.escondido">
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.escondido2">
 
         <Button
-            android:id="@+id/btn_masinfo"
+            android:id="@+id/btn_masinfo2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -119,7 +119,27 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ly.horizontal.footer"
+        android:id="@+id/ly.horizontal.btnPag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="320dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.footer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text2">
+
+        <Button
+            android:id="@+id/btn_nextpag2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt.btnNextPag" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly.horizontal.footer2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="680dp"
@@ -128,10 +148,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.btn">
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.btn2">
 
         <ImageButton
-            android:id="@+id/img_instagram"
+            android:id="@+id/img_instagram2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -140,7 +160,7 @@
             app:srcCompat="@drawable/instagram" />
 
         <ImageButton
-            android:id="@+id/img_gmail"
+            android:id="@+id/img_gmail2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -149,13 +169,15 @@
             app:srcCompat="@drawable/gmail" />
 
         <ImageButton
-            android:id="@+id/img_facebook"
+            android:id="@+id/img_facebook2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/purple_500"
             android:contentDescription="@string/boton.fbdescripcion"
             app:srcCompat="@drawable/facebook" />
+
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
