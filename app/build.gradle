@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -9,6 +10,7 @@ android {
     defaultConfig {
         applicationId "com.example.parcial_1_am_acn4a_brizuela_diaz"
         minSdk 25
+        //noinspection ExpiredTargetSdkVersion
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -29,6 +31,10 @@ android {
 }
 
 dependencies {
+
+    //Dependencias de firebase
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    implementation 'com.google.firebase:firebase-analytics'
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
