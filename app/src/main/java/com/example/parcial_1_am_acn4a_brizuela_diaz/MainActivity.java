@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
 
+    private String user;
+    private String pass;
+
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,19 @@ public class MainActivity extends AppCompatActivity {
         mEditTextUser = findViewById(R.id.userTextView);
         mEditTextPass = findViewById(R.id.passEditText);
         mBtnAcceso = findViewById(R.id.BtnAcceso);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        mBtnAcceso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                user = mEditTextUser.getText().toString().trim();
+                pass = mEditTextPass.getText().toString().trim();
+
+                
+            }
+        });
+
 
         ImageButton btnInstagram = findViewById(R.id.img_instagram3);
         btnInstagram.setOnClickListener(new View.OnClickListener() {
