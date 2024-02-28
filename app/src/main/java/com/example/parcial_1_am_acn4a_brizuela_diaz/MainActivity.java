@@ -2,21 +2,41 @@ package com.example.parcial_1_am_acn4a_brizuela_diaz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
+    //Componentes
+
+    EditText mEditTextUser;
+    EditText mEditTextPass;
+    Button mBtnAcceso;
+
+    //FireBase
+
+    FirebaseAuth mAuth;
+
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        mEditTextUser = findViewById(R.id.userTextView);
+        mEditTextPass = findViewById(R.id.passEditText);
+        mBtnAcceso = findViewById(R.id.BtnAcceso);
 
         ImageButton btnInstagram = findViewById(R.id.img_instagram3);
         btnInstagram.setOnClickListener(new View.OnClickListener() {
