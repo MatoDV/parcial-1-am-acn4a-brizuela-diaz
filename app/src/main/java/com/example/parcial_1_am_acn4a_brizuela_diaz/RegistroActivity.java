@@ -1,6 +1,7 @@
 package com.example.parcial_1_am_acn4a_brizuela_diaz;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -46,6 +47,8 @@ public class RegistroActivity extends AppCompatActivity {
         mButtonRegistrar = findViewById(R.id.btnRegistro);
         mTextViewRespuesta = findViewById(R.id.TextViewRespuesta);
 
+        mAuth = FirebaseAuth.getInstance();
+
         mButtonRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,10 +70,17 @@ public class RegistroActivity extends AppCompatActivity {
                                     if(task.isSuccessful()){
                                         mTextViewRespuesta.setText("Se creo la cuenta correctamente");
                                         mTextViewRespuesta.setTextColor(Color.BLUE);
+                                        irMain();
                                     }else{
                                         mTextViewRespuesta.setText("La cuenta ya existe");
                                         mTextViewRespuesta.setTextColor(Color.RED);
                                     }
+                                }
+
+                                private void irMain() {
+                                    Intent intent = new Intent(RegistroActivity.this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
                                 }
                             });
 
