@@ -67,5 +67,14 @@
                 android:layout_weight="1"
                 android:text="Acceder" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewRespuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Respuesta"
+            android:layout_marginTop="20dp"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
