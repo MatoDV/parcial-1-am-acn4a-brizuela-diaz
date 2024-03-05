@@ -23,7 +23,12 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-        ImageButton btnInstagram = findViewById(R.id.img_instagram3);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton btnInstagram = findViewById(R.id.img_instagram3);
         btnInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnFacebook = findViewById(R.id.img_facebook3);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton btnFacebook = findViewById(R.id.img_facebook3);
         btnFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageButton btnGmail = findViewById(R.id.img_gmail3);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageButton btnGmail = findViewById(R.id.img_gmail3);
         btnGmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button MostrarMasButton = findViewById(R.id.btn_masinfo3);
-        TextView TextoEscondido = findViewById(R.id.txt_escondido3);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button MostrarMasButton = findViewById(R.id.btn_masinfo3);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView TextoEscondido = findViewById(R.id.txt_escondido3);
 
         MostrarMasButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        Button botonIrSegundaPagina = findViewById(R.id.btn_nextpag2);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button botonIrSegundaPagina = findViewById(R.id.btn_nextpag2);
         botonIrSegundaPagina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
