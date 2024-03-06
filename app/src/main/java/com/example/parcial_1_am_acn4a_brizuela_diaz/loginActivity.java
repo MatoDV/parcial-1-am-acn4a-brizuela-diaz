@@ -57,7 +57,7 @@ public class loginActivity extends AppCompatActivity {
             }
 
             private void irRegistro(){
-                Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
+                Intent intent = new Intent(loginActivity.this, RegistroActivity.class);
                 startActivity(intent);
             }
         });
@@ -106,18 +106,21 @@ public class loginActivity extends AppCompatActivity {
 
 
 
-        private void onStart() {
-            super.onStart();
-            FirebaseUser usuario = mAuth.getCurrentUser();
-            if(usuario != null){
-                irLogin();
-            }
-        }
+
 
 }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser usuario = mAuth.getCurrentUser();
+        if(usuario != null){
+            irLogin();
+        }
+    }
+
     private void irLogin() {
-        Intent intent = new Intent(MainActivity.this, loginActivity.class);
+        Intent intent = new Intent(loginActivity.this, loginActivity.class);
         startActivity(intent);
         finish();
     }
