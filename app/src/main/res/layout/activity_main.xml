@@ -119,6 +119,27 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ly.horizontal.btnPrePag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="275dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/ly.horizontal.footer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly.horizontal.text3">
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cerrar Sesion" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/ly.horizontal.btnPag2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,19 +158,6 @@
             android:layout_weight="1"
             android:text="@string/txt.btnNextPag" />
 
-        <Button
-            android:id="@+id/btn_nextpag2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/txt.btnNextPag" />
-
-        <Button
-            android:id="@+id/btnCerrarSesion"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cerrar Sesion" />
     </LinearLayout>
 
     <LinearLayout
