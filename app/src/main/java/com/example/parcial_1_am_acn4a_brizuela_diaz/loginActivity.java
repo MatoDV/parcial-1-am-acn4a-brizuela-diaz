@@ -69,7 +69,6 @@ public class loginActivity extends AppCompatActivity {
                 irLogin();
             }
         });
-
         mBtnAcceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
